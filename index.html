@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" type="text/css" href="build/css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="build/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="build/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="build/favicon/favicon-16x16.png">
+  <link rel="manifest" href="build/favicon/site.webmanifest">
+  <link rel="mask-icon" href="build/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <title>Дмитрий Алексеев - веб-разработчик</title>
+  
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="header__wrapper wrapper">
+      <button class="header__burger-menu btn" aria-label="Открыть меню"></button>
+      <nav class="header__menu top-menu">
+        <ul class="top-menu__list">
+          <li class="top-menu__item">
+            <a class="top-menu__link" href="#skills">
+              Услуги
+            </a>
+          </li>
+          <li class="top-menu__item">
+            <a class="top-menu__link" href="#works">
+              Портфолио
+            </a>
+          </li>
+          <li class="top-menu__item">
+            <a class="top-menu__link" href="#price">
+              Стоимость
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__close-menu btn close" aria-label="Закрыть меню">
+        <span class="close__line close__line--1"></span>
+        <span class="close__line close__line--2"></span>
+      </button>
+      <a class="header__phone" href="tel:+79999999999">
+        +7 (999) 999-99-99
+      </a>
+      <button class="order-btn--icon btn order-btn" aria-label="Заказать звонок">
+        Заказать звонок
+      </button>
+    </div>
+  </header>
+  <main class="main" id="main">
+    <section class="title-page wrapper">
+      <div class="title-page__elements elements elements--pink">
+        <span class="elements__item elements__littice">#</span>
+        <span class="elements__item elements__different-1">&lt;div&gt;</span>
+        <span class="elements__item elements__different-2">&lt;div&gt;</span>
+        <span class="elements__item elements__slash">&lt;/&gt;</span>
+        <span class="elements__item elements__braces">{&nbsp;}</span>
+      </div>
+      <div class="title-page__img-block img-block">
+        <picture class="img-block__container">
+         <source srcset="build/img/title-page/photo-da-desktop.png" media="(min-width: 900px)">
+         <img src="build/img/title-page/photo-da.png" alt="MDN" class="img-block__img">
+        </picture>
+      </div>
+      <div class="title-page__content">
+        <h1 class="title-page__title h">
+          Дмитрий Алексеев
+        </h1>
+        <span class="title-page__subtitle">
+          Frontend-разработчик и веб-верстальщик
+        </span>
+        <a href="#skills" class="title-page__link btn main-button">
+          Узнать больше
+        </a>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="skills__wrapper wrapper">
+        <h2 class="skills__title h h--2">
+          Что я делаю
+        </h2>
+        <ul class="skills__list">
+          <li class="skills__item skill skill--1 ">
+            Верстка лендинг-страниц и&nbsp;сайтов любой сложности
+          </li>
+          <li class="skills__item skill skill--2">
+            Адаптивная верстка под все браузеры и&nbsp;устройства
+          </li>
+          <li class="skills__item skill skill--3">
+            Frontend-разработка и&nbsp;программирование
+          </li>
+          <li class="skills__item skill skill--4">
+            Исправление и&nbsp;доработка существующей верстки
+          </li>
+        </ul>
+        <a href="#price" class="skills__link btn main-button">
+          Узнать стоимость
+        </a>
+      </div>
+    </section>
+    <section class="works" id="works">
+      <div class="works__wrapper wrapper">
+        <h2 class="works__title h h--2">
+          Примеры моих работ
+        </h2>
+  <!-- Здесь начинается слайдер Swiper имеющий собственные классы -->
+        <button class="slider__btn btn slider__btn--left"></button>
+        <button class="slider__btn btn slider__btn--right"></button>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slider__item slide">
+                <img class="slide__img slide__img--size" src="build/img/works/work-1.jpg" alt="Психолог Вера Антонова">
+                <a class="slide__link" href="#">
+                  Сайт психолга Веры Антоновой
+                </a>
+            </div>
+            <div class="slider__item slide">
+              <img class="slide__img" src="build/img/works/work-2.jpg" alt="Детская одежда">
+              <a class="slide__link" href="#">
+                Сайт магазина детской одежды
+              </a>
+            </div>
+            <div class="slider__item slide">
+              <img class="slide__img" src="build/img/works/work-3.jpg" alt="Рыболов">
+              <a class="slide__link" href="#">
+                Сайт магазина "Рыболов"
+              </a>
+            </div>
+          </div>
+          <div class="slider__pagination"></div>
+        </div>
+
+  <!-- Кончается слайдер -->
+
+        <button class="works__btn btn main-button">
+          Заказать проект
+        </button>
+      </div>
+    </section>
+    <section class="price" id="price">
+      <!-- <div class="price__elements elements elements--white">
+        <span class="elements__item elements__littice">#</span>
+        <span class="elements__item elements__different-1">&lt;div&gt;</span>
+        <span class="elements__item elements__different-2">&lt;div&gt;</span>
+        <span class="elements__item elements__slash">&lt;/&gt;</span>
+        <span class="elements__item elements__braces">{&nbsp;}</span>
+      </div> -->
+      <div class="price__wrapper wrapper">
+        <h3 class="price__title h">
+          Адаптивная верстка под&nbsp;все&nbsp;устройства<br> и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*
+        </h3>
+        <p class="price__footnote">Срок&nbsp;и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;расчитываться индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="footer">
+    <div class="footer__wrapper wrapper">
+      <ul class="footer__menu lower-menu">
+        <li class="lower-menu__item ">
+          <a class="lower-menu__link" href="#skills">
+            Услуги
+          </a>
+        </li>
+        <li class="lower-menu__item">
+          <a class="lower-menu__link" href="#works">
+            Портфолио
+          </a>
+        </li>
+        <li class="lower-menu__item">
+          <a class="lower-menu__link" href="#price">
+            Стоимость
+          </a>
+        </li>
+      </ul>
+      <ul class="footer__contacts contacts">
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:+79999749891">
+            <svg id="phone-svg" class="contacts__icon"   viewBox="0 0 348.077 348.077">
+              <path d="M340.273,275.083l-53.755-53.761c-10.707-10.664-28.438-10.34-39.518,0.744l-27.082,27.076
+              c-1.711-0.943-3.482-1.928-5.344-2.973c-17.102-9.476-40.509-22.464-65.14-47.113c-24.704-24.701-37.704-48.144-47.209-65.257
+              c-1.003-1.813-1.964-3.561-2.913-5.221l18.176-18.149l8.936-8.947c11.097-11.1,11.403-28.826,0.721-39.521L73.39,8.194
+              C62.708-2.486,44.969-2.162,33.872,8.938l-15.15,15.237l0.414,0.411c-5.08,6.482-9.325,13.958-12.484,22.02
+              C3.74,54.28,1.927,61.603,1.098,68.941C-6,127.785,20.89,181.564,93.866,254.541c100.875,100.868,182.167,93.248,185.674,92.876
+              c7.638-0.913,14.958-2.738,22.397-5.627c7.992-3.122,15.463-7.361,21.941-12.43l0.331,0.294l15.348-15.029
+              C350.631,303.527,350.95,285.795,340.273,275.083z"/>
+            </svg>
+            +7 (999) 999-99-99
+          </a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link" href="mailto:bryuzgin2010@yandex.ru">
+            <svg version="1.1" id="email-svg" class="contacts__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 511.626 511.626" xml:space="preserve">
+              <path d="M49.106,178.729c6.472,4.567,25.981,18.131,58.528,40.685c32.548,22.554,57.482,39.92,74.803,52.099
+                c1.903,1.335,5.946,4.237,12.131,8.71c6.186,4.476,11.326,8.093,15.416,10.852c4.093,2.758,9.041,5.852,14.849,9.277
+                c5.806,3.422,11.279,5.996,16.418,7.7c5.14,1.718,9.898,2.569,14.275,2.569h0.287h0.288c4.377,0,9.137-0.852,14.277-2.569
+                c5.137-1.704,10.615-4.281,16.416-7.7c5.804-3.429,10.752-6.52,14.845-9.277c4.093-2.759,9.229-6.376,15.417-10.852
+                c6.184-4.477,10.232-7.375,12.135-8.71c17.508-12.179,62.051-43.11,133.615-92.79c13.894-9.703,25.502-21.411,34.827-35.116
+                c9.332-13.699,13.993-28.07,13.993-43.105c0-12.564-4.523-23.319-13.565-32.264c-9.041-8.947-19.749-13.418-32.117-13.418H45.679
+                c-14.655,0-25.933,4.948-33.832,14.844C3.949,79.562,0,91.934,0,106.779c0,11.991,5.236,24.985,15.703,38.974
+                C26.169,159.743,37.307,170.736,49.106,178.729z"/>
+              <path d="M483.072,209.275c-62.424,42.251-109.824,75.087-142.177,98.501c-10.849,7.991-19.65,14.229-26.409,18.699
+                c-6.759,4.473-15.748,9.041-26.98,13.702c-11.228,4.668-21.692,6.995-31.401,6.995h-0.291h-0.287
+                c-9.707,0-20.177-2.327-31.405-6.995c-11.228-4.661-20.223-9.229-26.98-13.702c-6.755-4.47-15.559-10.708-26.407-18.699
+                c-25.697-18.842-72.995-51.68-141.896-98.501C17.987,202.047,8.375,193.762,0,184.437v226.685c0,12.57,4.471,23.319,13.418,32.265
+                c8.945,8.949,19.701,13.422,32.264,13.422h420.266c12.56,0,23.315-4.473,32.261-13.422c8.949-8.949,13.418-19.694,13.418-32.265
+                V184.437C503.441,193.569,493.927,201.854,483.072,209.275z"/>
+            </svg>
+            yandex@yandex.ru
+          </a>
+        </li>
+      </ul>
+      <div class="footer__form social">
+        <button class="order-btn order-btn--footer btn main-button" aria-label="Заказать звонок">
+          Заказать звонок
+        </button>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com" target="_blank">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/" target="_blank">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/" target="_blank">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/" target="_blank">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__copyright">&copy;  Брюзгин Лев, 2019
+  </footer>
+  <a class="top-button" id="top-button" href="#header" aria-label="В начало страницы">
+    <img class="top-button__img" src="build/img/menu/rise-up.png" alt="rise-up">
+  </a>
+  <div class="popup-container">
+    <form action="" class="popup">
+      <h4 class="popup__title">Заказать звонок</h4>
+      <label for="i-name" class="sr-only">Ваше имя</label>
+      <input type="text" name="name" id="i-name" class="popup__information" placeholder = "Ваше имя" autocomplete="off"/>
+      <label for="i-phone" class="sr-only">Ваш телефон</label>
+      <input type="tel" name="phone" id="i-phone" class="popup__information"  placeholder = "Ваш телефон" autocomplete="off"/>
+      <label for="i-information" class="sr-only">Дополнительная информация</label>
+      <input type="text" name="information" id="i-information" class="popup__information" placeholder = "Дополнительная информация" autocomplete="off"/>
+      <label for="i-send-btn" class="sr-only">Отправить</label>
+      <input type="submit" id="i-send-btn" class="popup__send-btn order-btn btn"/>
+      <button class="popup__close-btn btn close" aria-label="Закрыть форму">
+        <span class="close__line close__line--1"></span>
+        <span class="close__line close__line--2"></span>
+      </button>
+    </form>
+  </div>
+  <script src="build/js/slider/slider.min.js"></script>
+  <script src="build/js/script.js"></script>
+</body>
+</html>
