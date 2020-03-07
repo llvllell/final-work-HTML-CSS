@@ -98,7 +98,7 @@ ul li {
   color: #fff;
   margin: 0 auto;
   border-radius: 3px;
-  transition: all 0.3s;
+  transition: all .2s;
 }
 
 .main-button:hover {
@@ -117,6 +117,11 @@ ul li {
   cursor: pointer;
   text-align: center;
   padding: 15px;
+  transition: box-shadow .2s
+}
+
+.top-button:hover {
+  box-shadow: 0 0 20px 0 #ff3691;
 }
 
 .top-button--active {
@@ -167,6 +172,7 @@ ul li {
 /*===== POPUP-CONTAINER =====*/
 
 .popup-container {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -182,6 +188,10 @@ ul li {
 .popup-container--active {
   visibility: visible;
   opacity: 1;
+}
+
+.popup-container--block {
+  display: block;
 }
 
 .popup {
@@ -323,17 +333,22 @@ ul li {
 }
 
 .top-menu {
+  display: none;
   width: 100vw;
   height: 100vh;
   background: #ff3692;
-  visibility: hidden;
   opacity: 0;
+  visibility: hidden;
   transition: visibility .5s, opacity .5s;
 }
 
 .top-menu--active {
   visibility: visible;
   opacity: 1;
+}
+
+.top-menu--block {
+  display: block;
 }
 
 .top-menu__list {
@@ -422,6 +437,11 @@ ul li {
 .header__phone {
   font-size: 18px;
   font-weight: 700;
+  transition: color .2s;
+}
+
+.header__phone:hover {
+  color: #ff3095;
 }
 
 /*===== / HEADER =====*/
@@ -570,6 +590,7 @@ ul li {
 }
 
 .slider__item {
+  display: block;
   width: 330px;
   margin-bottom: 60px;
   margin: 0 auto;
@@ -598,11 +619,16 @@ ul li {
   object-position: 50%;
 }
 
-.slide__link {
-  display: block;
+.slide__title {
   color: #8993ad;
   font-size: 18px;
   font-weight: 500;
+  margin: 0;
+  transition: color .2s;
+}
+
+.slider__item:hover .slide__title {
+  color: #ff4e2e;
 }
 
 .pagination__bullet {
@@ -629,6 +655,7 @@ ul li {
 
 .works__btn {
   text-align: center;
+  font-size: 16px;
 }
 
 /*===== / WORKS =====*/
@@ -703,6 +730,11 @@ ul li {
   color: #8993ad;
   font-size: 15px;
   font-weight: 400;
+  transition: color .2s;
+}
+
+.lower-menu__item:hover .lower-menu__link {
+  color: #ff8f5a;
 }
 
 .footer__contacts {
@@ -722,6 +754,11 @@ ul li {
 .contacts__link  {
   display: block;
   color: #8993ad;
+  transition: color .2s;
+}
+
+.contacts__item:hover .contacts__link {
+  color: #ff8f5a;
 }
 
 .contacts__icon {
@@ -866,6 +903,10 @@ ul li {
   .header__phone {
     font-size: 25px;
     margin-right: 29px;
+  }
+
+  .header__phone:hover {
+    color: #ff4e2e;
   }
 
   /*===== / HEADER =====*/
@@ -1056,23 +1097,38 @@ ul li {
 
 }
 
+@media (min-width: 900px) {
+  
+  /*===== TITLE-PAGE =====*/
+
+  .title-page__title {
+    font-size: 38px;
+  }
+
+  .title-page__subtitle {
+    font-size: 18px;
+  }
+
+  /*===== / TITLE-PAGE =====*/
+}
+
 @media (min-width: 1024px) {
 
   /*===== POPUP-CONTAINER =====*/
 
-.popup {
-  padding: 40px 20px;
-  width: 380px;
-}
+  .popup {
+    padding: 40px 20px;
+    width: 380px;
+  }
 
-.popup__title {
-  font-size: 1.2em;
-}
+  .popup__title {
+    font-size: 1.2em;
+  }
 
-.popup__information {
-  font-size: 1em;
-  margin-bottom: 20px;
-}
+  .popup__information {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
 
 /*===== / POPUP-CONTAINER =====*/
 
@@ -1110,9 +1166,9 @@ ul li {
     background: none;
     width: auto;
     height: 100%;
-    flex-grow: 1;
-    visibility: visible;
+    margin-right: auto;
     opacity: 1;
+    visibility: visible;
   }
 
   .top-menu__list {
@@ -1176,7 +1232,7 @@ ul li {
   }
 
   .title-page__title {
-    font-size: 52px;
+    font-size: 51px;
     font-weight: 700;
     margin-bottom: 23px;
   }
@@ -1288,8 +1344,8 @@ ul li {
     margin-bottom: 20px;
   }
 
-  .slide__link {
-    font-size: 24px;
+  .slide__title {
+    font-size: 18px;
     font-weight: 600;
   }
 

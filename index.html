@@ -111,24 +111,24 @@
         <button class="slider__btn btn slider__btn--right"></button>
         <div class="slider-container">
           <div class="slider">
-            <div class="slider__item slide">
-                <img class="slide__img slide__img--size" src="build/img/works/work-1.jpg" alt="Психолог Вера Антонова">
-                <a class="slide__link" href="#">
-                  Сайт психолга Веры Антоновой
-                </a>
-            </div>
-            <div class="slider__item slide">
+            <a href="#" class="slider__item slide">
+              <img class="slide__img slide__img--size" src="build/img/works/work-1.jpg" alt="Психолог Вера Антонова">
+              <h4 class="slide__title">
+                Сайт психолга Веры Антоновой
+              </h4>
+            </a>
+            <a href="#" class="slider__item slide">
               <img class="slide__img" src="build/img/works/work-2.jpg" alt="Детская одежда">
-              <a class="slide__link" href="#">
+              <h4 class="slide__title">
                 Сайт магазина детской одежды
-              </a>
-            </div>
-            <div class="slider__item slide">
+              </h4>
+            </a>
+            <a href="#" class="slider__item slide">
               <img class="slide__img" src="build/img/works/work-3.jpg" alt="Рыболов">
-              <a class="slide__link" href="#">
+              <h4 class="slide__title">
                 Сайт магазина "Рыболов"
-              </a>
-            </div>
+              </h4>
+            </a>
           </div>
           <div class="slider__pagination"></div>
         </div>
@@ -242,16 +242,16 @@
     <img class="top-button__img" src="build/img/menu/rise-up.png" alt="rise-up">
   </a>
   <div class="popup-container">
-    <form action="" class="popup">
+    <form action="submit.php" method="POST" class="popup">
       <h4 class="popup__title">Заказать звонок</h4>
       <label for="i-name" class="sr-only">Ваше имя</label>
-      <input type="text" name="name" id="i-name" class="popup__information" placeholder = "Ваше имя" autocomplete="off"/>
+      <input type="text" name="name" id="i-name" class="popup__information" placeholder = "Ваше имя" autocomplete="off" required/>
       <label for="i-phone" class="sr-only">Ваш телефон</label>
-      <input type="tel" name="phone" id="i-phone" class="popup__information"  placeholder = "Ваш телефон" autocomplete="off"/>
+      <input type="tel" name="phone" id="i-phone" class="popup__information"  placeholder = "Ваш телефон" autocomplete="off" required/>
       <label for="i-information" class="sr-only">Дополнительная информация</label>
       <input type="text" name="information" id="i-information" class="popup__information" placeholder = "Дополнительная информация" autocomplete="off"/>
       <label for="i-send-btn" class="sr-only">Отправить</label>
-      <input type="submit" id="i-send-btn" class="popup__send-btn order-btn btn"/>
+      <input type="submit" value="Отправить" id="i-send-btn" class="popup__send-btn order-btn btn"/>
       <button class="popup__close-btn btn close" aria-label="Закрыть форму">
         <span class="close__line close__line--1"></span>
         <span class="close__line close__line--2"></span>

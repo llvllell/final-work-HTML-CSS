@@ -35,15 +35,23 @@ window.addEventListener('scroll', function() {
 // Данный блок создан для функционирования меню
 
 buttonBurgerMenu.addEventListener('click', function(){
-  topMenu.classList.add('top-menu--active');
+  topMenu.classList.add('top-menu--block');
+  setTimeout(function(){
+    topMenu.classList.add('top-menu--active');
+  },50);
+  topMenu.classList.remove('top-menu--none');
   headerCloseMenu.classList.add('close--active');
   body.classList.add('no-scroll');
+
 });
 
 headerCloseMenu.addEventListener('click', function(){
   topMenu.classList.remove('top-menu--active');
   headerCloseMenu.classList.remove('close--active');
   body.classList.remove('no-scroll');
+  setTimeout(function(){
+    topMenu.classList.remove('top-menu--block');
+  },500);
 });
 
 topMenu.addEventListener('click', function(e){
@@ -53,6 +61,9 @@ topMenu.addEventListener('click', function(e){
     topMenu.classList.remove('top-menu--active');
     headerCloseMenu.classList.remove('close--active');
     body.classList.remove('no-scroll');
+    setTimeout(function(){
+      topMenu.classList.remove('top-menu--block');
+    },500);
   }
 });
 
@@ -61,26 +72,38 @@ topMenu.addEventListener('click', function(e){
 orderBtn.forEach(function(button){
   button.addEventListener('click', function(e){
     e.preventDefault();
-    popupContainer.classList.add('popup-container--active');
+    popupContainer.classList.add('popup-container--block');
+    setTimeout(function(){
+      popupContainer.classList.add('popup-container--active');
+    },50);
     body.classList.add('no-scroll');
   });
 });
 
 worksBtn.addEventListener('click', function(e){
   e.preventDefault();
-  popupContainer.classList.add('popup-container--active');
+  popupContainer.classList.add('popup-container--block');
+  setTimeout(function(){
+    popupContainer.classList.add('popup-container--active');
+  },50);
   body.classList.add('no-scroll');
 });
 
 formCloseBtn.addEventListener('click', function(e){
   e.preventDefault();
   popupContainer.classList.remove('popup-container--active');
+  setTimeout(function(){
+    popupContainer.classList.remove('popup-container--block');
+  },500);
   body.classList.remove('no-scroll');
 });
   
 popupContainer.addEventListener('click', function(e){
   if(e.target.classList.contains('popup-container')){
     popupContainer.classList.remove('popup-container--active');
+    setTimeout(function(){
+      popupContainer.classList.remove('popup-container--block');
+    },500);
     body.classList.remove('no-scroll');
   }
 });
