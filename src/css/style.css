@@ -479,6 +479,7 @@ ul li {
 .img-block__img {
   margin-bottom: -4px;
   margin-left: 58px;
+  filter: drop-shadow(20px 20px 20px black);
 }
 
 .title-page__content {
