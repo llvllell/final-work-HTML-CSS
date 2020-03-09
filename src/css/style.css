@@ -302,6 +302,22 @@ ul li {
   transform: translate(36vw,-10vh) rotate(-17deg);
 }
 
+.elements--white .elements__different-1 {
+  transform: translate(3vw,30vh) rotate(18deg);
+}
+
+.elements--white .elements__littice {
+  transform: translate(13vw,-2vh) rotate(12deg);
+}
+
+.elements--white .elements__braces {
+  transform: translate(90vw,150px) rotate(-18deg);
+}
+
+.elements--white .elements__slash {
+  transform: translate(70vw,-5vh) rotate(20deg);
+}
+
 /*===== / DECORATION ELEMENTS =====*/
 
 /*===== HEADER =====*/
