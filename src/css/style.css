@@ -479,7 +479,7 @@ ul li {
 .img-block__img {
   margin-bottom: -4px;
   margin-left: 58px;
-  filter: drop-shadow(20px 20px 20px black);
+  filter: drop-shadow(7px 15px 10px #000);
 }
 
 .title-page__content {
@@ -508,6 +508,8 @@ ul li {
 /*===== / TITLE-PAGE =====*/
 
 .skills {
+  position: relative;
+  z-index: 10;
   padding: 18px 0;
   background: #fff;
 }
