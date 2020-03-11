@@ -374,6 +374,7 @@ ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .top-menu__item {
@@ -499,9 +500,11 @@ ul li {
 }
 
 .title-page__content {
+  position: relative;
   background: #fff;
   padding: 12px 19px 20px;
   text-align: center;
+  z-index: 9;
 }
 
 .title-page__title {

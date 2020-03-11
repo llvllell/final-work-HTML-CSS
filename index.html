@@ -241,7 +241,10 @@
     <img class="top-button__img" src="build/img/menu/rise-up.png" alt="rise-up">
   </a>
   <div class="popup-container">
-    <form action="/submit.php" method="POST" class="popup">
+    <form action="mail.php" method="POST" class="popup">
+      <input type="hidden" name="project_name" value="Текст" />
+      <input type="hidden" name="admin_email" value="bryuzgin2010@yandex.ru" />
+      <input type="hidden" name="form_subject" value="Тема" />
       <h4 class="popup__title">Заказать звонок</h4>
       <label for="i-name" class="sr-only">Ваше имя</label>
       <input type="text" name="name" id="i-name" class="popup__information" placeholder="Ваше имя" autocomplete="off" required/>
