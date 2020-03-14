@@ -143,7 +143,6 @@
     <section class="price" id="price">
       <div class="price__elements elements elements--white">
         <span class="elements__item elements__littice">#</span>
-        <span class="elements__item elements__different-1">&lt;div&gt;</span>
         <span class="elements__item elements__slash">&lt;/&gt;</span>
         <span class="elements__item elements__braces">{&nbsp;}</span>
       </div>
@@ -241,7 +240,7 @@
     <img class="top-button__img" src="build/img/menu/rise-up.png" alt="rise-up">
   </a>
   <div class="popup-container">
-    <form action="mail.php" method="POST" class="popup">
+    <form action="submit.php" method="POST" class="popup">
       <input type="hidden" name="project_name" value="Текст" />
       <input type="hidden" name="admin_email" value="bryuzgin2010@yandex.ru" />
       <input type="hidden" name="form_subject" value="Тема" />
@@ -251,9 +250,9 @@
       <label for="i-phone" class="sr-only">Ваш телефон</label>
       <input type="tel" name="phone" id="i-phone" class="popup__information"  placeholder="Ваш телефон" autocomplete="off" required/>
       <label for="i-information" class="sr-only">Дополнительная информация</label>
-      <input type="text" name="information" id="i-information" class="popup__information" placeholder="Дополнительная информация" autocomplete="off"/>
+      <input class="popup__information" id="i-information" name="information" placeholder="Дополнительная информация" autocomplete="off" />
       <label for="i-send-btn" class="sr-only">Отправить</label>
-      <input type="submit" value="Отправить" id="i-send-btn" class="popup__send-btn order-btn btn"/>
+      <input type="submit" value="Отправить" id="i-send-btn" class="popup__send-btn btn"/>
       <button class="popup__close-btn btn close" aria-label="Закрыть форму">
         <span class="close__line close__line--1"></span>
         <span class="close__line close__line--2"></span>

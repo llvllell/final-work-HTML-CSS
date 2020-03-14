@@ -8,6 +8,7 @@ const popupContainer = document.querySelector('.popup-container');
 const topButton = document.querySelector('.top-button');
 const body = document.querySelector('body');
 const worksBtn = document.querySelector('.works__btn');
+const titlePageElements = document.querySelector('.title-page__elements');
 
 
 //Блок ниже отвечает за работу кнопки, которая возвращает в начало страницы
@@ -109,7 +110,11 @@ popupContainer.addEventListener('click', function(e){
 });
 
 
+// Летающие элементы
 
+setTimeout(function(){
+  titlePageElements.classList.add('elements--active');
+},0);
 
 
 

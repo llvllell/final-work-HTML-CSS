@@ -241,10 +241,10 @@ ul li {
   border-bottom: 2px solid #ff4e2e;
 }
 
-.popup__send-btn.order-btn {
+.popup__send-btn {
   width: 100%;
   height: 46px;
-  background: none;
+  background: #fff;
   border: 1px solid #ff4e2e;
   font-size: 16px;
   color: #ff4e2e;
@@ -259,19 +259,15 @@ ul li {
 
 /*===== DECORATION ELEMENTS =====*/
 
-.elements {
+.title-page__elements {
   position: absolute;
+}
+
+.elements {
   font-size: 18px;
   font-weight: 700;
   height: 100%;
   z-index: 51;
-  transition: transform 0.3s;
-}
-
-.elements__item {
-  position: absolute;
-  transition: transform 0.3s;
-  transition-duration: 0.5s;
 }
 
 .elements--pink {
@@ -282,32 +278,37 @@ ul li {
   color: #fff;
 }
 
-.elements--pink .elements__different-1 {
-  transform: translate(3vw,70px) rotate(18deg);
+.elements__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0vw,0px) rotate(0deg);
+  transition: transform 1s;
+
 }
 
-.elements--pink .elements__littice {
+.elements--active .elements__different-1 {
+  transform: translate(3vw,15vh) rotate(18deg);
+}
+
+.elements--active .elements__littice {
   transform: translate(13vw,0vh) rotate(12deg);
 }
 
-.elements--pink .elements__braces {
+.elements--active .elements__braces {
   transform: translate(90vw,2vh) rotate(-18deg);
 }
 
-.elements--pink .elements__slash {
+.elements--active .elements__slash {
   transform: translate(70vw,-5vh) rotate(20deg);
 }
 
-.elements--pink .elements__different-2 {
+.elements--active .elements__different-2 {
   transform: translate(36vw,-10vh) rotate(-17deg);
 }
 
-.elements--white .elements__different-1 {
-  transform: translate(3vw,30vh) rotate(18deg);
-}
-
 .elements--white .elements__littice {
-  transform: translate(13vw,-2vh) rotate(12deg);
+  transform: translate(13vw,5vh) rotate(12deg);
 }
 
 .elements--white .elements__braces {
@@ -315,7 +316,7 @@ ul li {
 }
 
 .elements--white .elements__slash {
-  transform: translate(70vw,-5vh) rotate(20deg);
+  transform: translate(70vw,5vh) rotate(20deg);
 }
 
 /*===== / DECORATION ELEMENTS =====*/
@@ -874,23 +875,23 @@ ul li {
 
   /*===== DECORATION ELEMENTS =====*/
 
-  .elements--pink .elements__different-1 {
+  .elements--active .elements__different-1 {
     transform: translate(30vw,10vh) rotate(18deg);
   }
 
-  .elements--pink .elements__littice {
+  .elements--active .elements__littice {
     transform: translate(5vw,20vh) rotate(12deg);
   }
 
-  .elements--pink .elements__braces {
+  .elements--active .elements__braces {
     transform: translate(45vw,45vh) rotate(-18deg);
   }
 
-  .elements--pink .elements__slash {
+  .elements--active .elements__slash {
     transform: translate(54vw,10vh) rotate(20deg);
   }
 
-  .elements--pink .elements__different-2 {
+  .elements--active .elements__different-2 {
     transform: translate(36vw,70vh) rotate(-17deg);
   }
 
@@ -1427,7 +1428,7 @@ ul li {
 @media (min-width: 1170px) {
   
   .title-page__title {
-    font-size: 68px;
+    font-size: 67px;
   }
 
   .skill {
