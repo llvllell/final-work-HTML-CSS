@@ -29,15 +29,16 @@ var mySwiper = new Swiper ('.slider-container', {
       spaceBetween: 20,
     },
 
-    1024: {
+    1023: {
       slidesPerView: 2,
       spaceBetween: 30,
     },
 
-    1400: {
+    9000: {
       slidesPerView: 3,
-      spaceBetween: 30, 
+      spaceBetween: 30,
     },
+
   },
 
   a11y: {

@@ -48,6 +48,7 @@ html {
 }
 
 body {
+  position: relative;
   background: #fbfbfb;
   overflow-x: hidden;
   font-family: "Roboto", "Arial", sans-serif;
@@ -261,6 +262,10 @@ ul li {
 
 .title-page__elements {
   position: absolute;
+  top: 35px;
+  left: 50%;
+  opacity: 0;
+  transition: opacity .5s;
 }
 
 .elements {
@@ -268,8 +273,6 @@ ul li {
   font-weight: 700;
   height: 100%;
   z-index: 51;
-  opacity: 0;
-  transition: opacity .5s;
 }
 
 .elements--active {
@@ -294,23 +297,23 @@ ul li {
 }
 
 .elements--active .elements__different-1 {
-  transform: translate(3vw,15vh) rotate(18deg);
+  transform: translate(-46vw, 30px) rotate(18deg);
 }
 
 .elements--active .elements__littice {
-  transform: translate(13vw,0vh) rotate(12deg);
+  transform: translate(-27vw,-60px) rotate(12deg);
 }
 
 .elements--active .elements__braces {
-  transform: translate(90vw,2vh) rotate(-18deg);
+  transform: translate(40vw,-5px) rotate(-18deg);
 }
 
 .elements--active .elements__slash {
-  transform: translate(70vw,-5vh) rotate(20deg);
+  transform: translate(-1vw,-110px) rotate(20deg);
 }
 
 .elements--active .elements__different-2 {
-  transform: translate(36vw,-10vh) rotate(-17deg);
+  transform: translate(27vw,-70px) rotate(-17deg);
 }
 
 .elements--white .elements__littice {
@@ -479,6 +482,11 @@ ul li {
 
 .title-page {
   background: #fbfbfb;
+  overflow: hidden;
+}
+
+.title-page__wrapper {
+  position: relative;
   padding: 154px 0 0;
 }
 
@@ -882,23 +890,27 @@ ul li {
   /*===== DECORATION ELEMENTS =====*/
 
   .elements--active .elements__different-1 {
-    transform: translate(30vw,10vh) rotate(18deg);
+    transform: translate(-50vw, 230px) rotate(18deg);
+    font-size: 26px;
   }
 
   .elements--active .elements__littice {
-    transform: translate(5vw,20vh) rotate(12deg);
+    transform: translate(-63vw,-10px) rotate(12deg);
+    font-size: 36px;
   }
 
   .elements--active .elements__braces {
-    transform: translate(45vw,45vh) rotate(-18deg);
+    transform: translate(14vw,-80px) rotate(-18deg);
+    font-size: 30px;
   }
 
   .elements--active .elements__slash {
-    transform: translate(54vw,10vh) rotate(20deg);
+    transform: translate(-24vw, 50px) rotate(20deg);
+    font-size: 16px;
   }
 
   .elements--active .elements__different-2 {
-    transform: translate(36vw,70vh) rotate(-17deg);
+    transform: translate(-36vw, -50px) rotate(-17deg);
   }
 
 /*===== / DECORATION ELEMENTS =====*/
@@ -942,7 +954,7 @@ ul li {
 
   /*===== TITLE-PAGE =====*/
 
-  .title-page {
+  .title-page__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -996,19 +1008,43 @@ ul li {
 
 @media (min-width: 900px) {
 
+/*===== DECORATION ELEMENTS =====*/
+
+  .elements--active .elements__different-1 {
+    transform: translate(-57vw,450px) rotate(18deg);
+  }
+
+  .elements--active .elements__littice {
+    transform: translate(-63vw,10vh) rotate(12deg);
+  }
+
+  .elements--active .elements__braces {
+    transform: translate(-15vw,10vh) rotate(-18deg);
+  }
+
+  .elements--active .elements__slash {
+    transform: translate(-32vw,300px) rotate(20deg);
+  }
+
+  .elements--active .elements__different-2 {
+    transform: translate(-36vw,4vh) rotate(-17deg);
+  }
+
+/*===== / DECORATION ELEMENTS =====*/
+
 /*===== TITLE PAGE =====*/
 
-  .title-page {
+  .title-page__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 80px 20px 0;    
   }
 
-  .title-page .wrapper {
+  /*.title-page .wrapper {
     background: red;
     justify-content: space-between;
-  }
+  }*/
   
   .img-block {
     z-index: 10;
@@ -1264,7 +1300,7 @@ ul li {
 
   /*===== TITLE-PAGE =====*/
 
-  .title-page {
+  .title-page__wrapper {
     padding: 100px 20px 0;    
   }
 
