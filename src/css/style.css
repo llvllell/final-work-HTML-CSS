@@ -543,7 +543,7 @@ ul li {
   font-weight: 400;
 }
 
-.title-page__link {
+.title-page__btn {
   margin: 22px auto 0;
   text-align: center;
   font-size: 16px;
@@ -602,7 +602,7 @@ ul li {
   background-size: 30%;
 }
 
-.skills__link {
+.skills__btn {
   margin-bottom: 50px;
   text-align: center;
   font-size: 16px;
@@ -990,7 +990,7 @@ ul li {
     width: 78%;
   }
 
-  .title-page__link {
+  .title-page__btn {
     margin-left: 0;
   }
 
@@ -1053,11 +1053,6 @@ ul li {
     padding: 80px 20px 0;    
   }
 
-  /*.title-page .wrapper {
-    background: red;
-    justify-content: space-between;
-  }*/
-  
   .img-block {
     z-index: 10;
     width: 100%;
@@ -1069,7 +1064,7 @@ ul li {
     padding: 0;
   }
 
-  .title-page__link {
+  .title-page__btn {
     margin-left: 0;
     margin-top: 48px;
   }
@@ -1354,7 +1349,7 @@ ul li {
     font-size: 16px;
   }
 
-  .skills__link {
+  .skills__btn {
     margin: 0 auto;
   }
 

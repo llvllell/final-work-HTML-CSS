@@ -8,8 +8,8 @@ const popupContainer = document.querySelector('.popup-container');
 const topButton = document.querySelector('.top-button');
 const body = document.querySelector('body');
 const worksBtn = document.querySelector('.works__btn');
-const titlePageBtn = document.querySelector('.title-page__link');
-const skillsBtn = document.querySelector('.skills__link');
+const titlePageBtn = document.querySelector('.title-page__btn');
+const skillsBtn = document.querySelector('.skills__btn');
 const titlePageElements = document.querySelector('.title-page__elements');
 const popupInformationEmail = document.querySelector('.popup__information--email');
 
@@ -126,3 +126,4 @@ function addPopupContainer(e){
   },50);
   body.classList.add('no-scroll');
 };
+
