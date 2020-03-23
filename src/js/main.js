@@ -8,7 +8,10 @@ const popupContainer = document.querySelector('.popup-container');
 const topButton = document.querySelector('.top-button');
 const body = document.querySelector('body');
 const worksBtn = document.querySelector('.works__btn');
+const titlePageBtn = document.querySelector('.title-page__link');
+const skillsBtn = document.querySelector('.skills__link');
 const titlePageElements = document.querySelector('.title-page__elements');
+const popupInformationEmail = document.querySelector('.popup__information--email');
 
 
 //Блок ниже отвечает за работу кнопки, которая возвращает в начало страницы
@@ -81,20 +84,16 @@ orderBtn.forEach(function(button){
   });
 });
 
-worksBtn.addEventListener('click', function(e){
-  e.preventDefault();
-  popupContainer.classList.add('popup-container--block');
-  setTimeout(function(){
-    popupContainer.classList.add('popup-container--active');
-  },50);
-  body.classList.add('no-scroll');
-});
+worksBtn.addEventListener('click', addPopupContainer);
+titlePageBtn.addEventListener('click', addPopupContainer);
+skillsBtn.addEventListener('click', addPopupContainer);
 
 formCloseBtn.addEventListener('click', function(e){
   e.preventDefault();
   popupContainer.classList.remove('popup-container--active');
   setTimeout(function(){
     popupContainer.classList.remove('popup-container--block');
+    popupInformationEmail.classList.remove('popup-container--block');
   },500);
   body.classList.remove('no-scroll');
 });
@@ -104,11 +103,11 @@ popupContainer.addEventListener('click', function(e){
     popupContainer.classList.remove('popup-container--active');
     setTimeout(function(){
       popupContainer.classList.remove('popup-container--block');
+      popupInformationEmail.classList.remove('popup-container--block');
     },500);
     body.classList.remove('no-scroll');
   }
 });
-
 
 // Летающие элементы
 
@@ -116,5 +115,14 @@ setTimeout(function(){
   titlePageElements.classList.add('elements--active');
 },0);
 
+//Функция для появления модального окна при нажатии кнопки блока main
 
-
+function addPopupContainer(e){
+  e.preventDefault();
+  popupContainer.classList.add('popup-container--block');
+  popupInformationEmail.classList.add('popup-container--block');
+  setTimeout(function(){
+    popupContainer.classList.add('popup-container--active');
+  },50);
+  body.classList.add('no-scroll');
+};

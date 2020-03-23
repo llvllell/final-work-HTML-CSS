@@ -13,7 +13,6 @@
   <link rel="manifest" href="build/favicon/site.webmanifest">
   <link rel="mask-icon" href="build/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <title>Дмитрий Алексеев - веб-разработчик</title>
-  
 </head>
 <body>
   <header class="header" id="header">
@@ -74,9 +73,9 @@
           <span class="title-page__subtitle">
             Frontend-разработчик и веб-верстальщик
           </span>
-          <a href="#skills" class="title-page__link btn main-button">
+          <button class="title-page__link btn main-button">
             Узнать больше
-          </a>
+          </button>
         </div>
       </div>
     </section>
@@ -99,9 +98,9 @@
             Исправление и&nbsp;доработка существующей верстки
           </li>
         </ul>
-        <a href="#price" class="skills__link btn main-button">
+        <button class="skills__link btn main-button">
           Узнать стоимость
-        </a>
+        </button>
       </div>
     </section>
     <section class="works" id="works">
@@ -243,7 +242,7 @@
     <img class="top-button__img" src="build/img/menu/rise-up.png" alt="rise-up">
   </a>
   <div class="popup-container">
-    <form action="submit.php" method="POST" class="popup">
+    <form action="" method="" class="popup">
       <input type="hidden" name="project_name" value="Текст" />
       <input type="hidden" name="admin_email" value="bryuzgin2010@yandex.ru" />
       <input type="hidden" name="form_subject" value="Тема" />
@@ -252,8 +251,8 @@
       <input type="text" name="name" id="i-name" class="popup__information" placeholder="Ваше имя" autocomplete="off" required/>
       <label for="i-phone" class="sr-only">Ваш телефон</label>
       <input type="tel" name="phone" id="i-phone" class="popup__information"  placeholder="Ваш телефон" autocomplete="off" required/>
-      <label for="i-information" class="sr-only">Дополнительная информация</label>
-      <input class="popup__information" id="i-information" name="information" placeholder="Дополнительная информация" autocomplete="off" />
+      <label for="i-email" class="sr-only">Ваш E-mail</label>
+      <input type="email" class="popup__information popup__information--email" id="i-email" name="email" placeholder="Ваш E-mail" autocomplete="off"/>
       <label for="i-send-btn" class="sr-only">Отправить</label>
       <input type="submit" value="Отправить" id="i-send-btn" class="popup__send-btn btn"/>
       <button class="popup__close-btn btn close" aria-label="Закрыть форму">

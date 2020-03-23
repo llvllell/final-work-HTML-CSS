@@ -192,7 +192,7 @@ ul li {
 }
 
 .popup-container--block {
-  display: block;
+  display: block !important;
 }
 
 .popup {
@@ -230,6 +230,14 @@ ul li {
 
 .popup__information:nth-child(7) {
   margin-bottom: 30px;
+}
+
+.popup__information--email {
+  display: none;
+}
+
+.popup__information--email .popup-container--block {
+  display: block;
 }
 
 .popup__close-btn {
@@ -537,6 +545,8 @@ ul li {
 
 .title-page__link {
   margin: 22px auto 0;
+  text-align: center;
+  font-size: 16px;
 }
 
 /*===== / TITLE-PAGE =====*/
@@ -594,6 +604,8 @@ ul li {
 
 .skills__link {
   margin-bottom: 50px;
+  text-align: center;
+  font-size: 16px;
 }
 
 /*===== / SKILLS =====*/

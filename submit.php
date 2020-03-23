@@ -8,7 +8,7 @@
     $letter = 'Данные сообщения: ';
     $letter .= 'Имя:'.$_POST['name'].'\r\n';
     $letter .= 'Номер телефона: '.$_POST['phone'].'\r\n';
-    $letter .= 'Дополнительная информация:'.$_POST['information'].'\r\n';
+    $letter .= 'E-mail:'.$_POST['email'].'\r\n';
 
     if (mail('bryuzgin2010@yandex.ru', $theme, $letter, $headers)) {
       header('Location:/thankyou.php');

@@ -39,6 +39,7 @@ var mySwiper = new Swiper ('.slider-container', {
       spaceBetween: 30,
     },
 
+
   },
 
   a11y: {
